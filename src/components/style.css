@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.join-block {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  width: 297px;
+  background-color: #ddd;
+  border: 1px solid black;
+}
+.join-block input {
+  width: 260px;
+  height: 65px;
+  font-size: 25px;
+}
+.join-block button {
+  width: 260px;
+  height: 65px;
+  font-size: 25px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar {
+  background-color: #ddd;
+  width: 300px;
+  padding-top: 20px;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat {
+  display: inline-block;
+
+  height: 800px;
+
+  width: 500px;
+  padding-top: 20px;
+  padding-left: 10px;
+
+  width: 600px;
+  border: 2px solid blue;
+  overflow-y: auto;
+}
+.chats_rooms {
+  background-color: #ddd;
+  width: 300px;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  width: 500px;
+}
+button {
+  height: 100px;
+  width: 108px;
+  margin-left: 2px;
+}
+.chat__panel {
+  display: flex;
+  margin-top: 5px;
+}
+li {
+  list-style: none;
+  margin: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+li.active {
+  color: blue;
+}
+span {
+  font-size: 30px;
+}
+.chat__message span {
+  font-size: 20px;
+  background-color: aquamarine;
+  min-height: 10px;
+  min-width: 10px;
+  border: 2px solid green;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.chat__message {
+  margin-top: 50px;
+}
