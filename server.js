@@ -51,10 +51,6 @@ io.on('connection', (socket) => {
     const users = [...rooms.get(roomId).get('users').values()]
 
     io.in(roomId).emit('ROOM:SET_USERS', users)
-
-    socket.on('answerCall', (data) => {
-      io.to(data.to).emit('callAccepted', data.signal)
-    })
   })
 
   socket.on('ROOM:NEW_MESSAGE', ({ roomId, userName, text }) => {

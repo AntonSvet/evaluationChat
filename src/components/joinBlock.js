@@ -28,12 +28,6 @@ const JoinBlock = ({ onLogin }) => {
         onChange={(e) => setUserName(e.target.value)}
       />
 
-      {/*   <input
-        type="text"
-        placeholder="id"
-        value={roomId}
-        onChange={(e) => setRoomId(e.target.value)}
-      /> */}
       <button disabled={isLoading} onClick={onEnter}>
         {isLoading ? 'Connect...' : 'Connect'}
       </button>
